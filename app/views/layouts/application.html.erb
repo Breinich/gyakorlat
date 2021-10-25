@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Gyakorlat</title>
+    <title>WineStore</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,33 @@
   </head>
 
   <body>
-    <%= yield %>
+    
+      <div id="menu" >
+        <table id="menutable" width="100%" cellspacing="0">
+        <tbody>
+          <tr>
+            <td id="home" width="29%">
+              <%= link_to "Főoldal", 'main' %>
+            </td>
+            <td id="shop" width="29%">
+              <%= link_to "Bolt", 'shop' %>
+            </td>
+            <td id="advice" width="29%">
+              <%= link_to "Tanácsok", 'advice' %>
+            </td>
+            <td id="cart" width="13%">
+              <%= link_to "Kosár", 'cart' %>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        </div>
+      <div id="page">
+        
+        <%= yield %>
+  
+      </div>
+      <div id="footer">ÁSZF, Elérhetőségek, Hasznos információk</div>
+    
   </body>
 </html>
