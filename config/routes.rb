@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'cart/kosar'
+  get 'cart/checkout'
+  get 'advice/tanacsok'
+  get 'shop/bolt'
+  get 'home/fooldal'
   get 'users/new'
   get 'weblap/main'
   get 'weblap/shop'
